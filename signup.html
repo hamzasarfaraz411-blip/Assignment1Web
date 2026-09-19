@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Brew & Bloom Café</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">☕</span>
+            Brew & Bloom
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-links">
+            <a href="signin.html" class="signin-link">Sign In</a>
+            <a href="signup.html" class="signup-link">Sign Up</a>
+        </div>
+
+    </div>
+</header>
+
+
+<main class="auth-page">
+
+    <div class="auth-container">
+
+        <!-- AUTH INFORMATION -->
+        <div class="auth-image">
+
+            <span class="badge">Welcome to the Community</span>
+
+            <h2>Join Brew & Bloom.</h2>
+
+            <p>
+                Create an account to stay connected with Brew & Bloom Café
+                and receive updates about new drinks, special offers and
+                upcoming events.
+            </p>
+
+        </div>
+
+
+        <!-- SIGN UP FORM -->
+        <div class="auth-form">
+
+            <h1>Create your account</h1>
+
+            <p class="auth-subtitle">
+                Sign up to become part of the Brew & Bloom community.
+            </p>
+
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="fullname">
+                        Full Name <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        class="form-control"
+                        placeholder="John Smith"
+                        minlength="2"
+                        maxlength="60"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="signup-email">
+                        Email Address <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signup-email"
+                        name="email"
+                        class="form-control"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-control"
+                        placeholder="+1 555 123 4567"
+                        pattern="[0-9+\-\s()]{7,20}"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">
+                        Password <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Create a password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirm-password">
+                        Confirm Password <span class="required">*</span>
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        class="form-control"
+                        placeholder="Confirm your password"
+                        minlength="8"
+                        required
+                    >
+                </div>
+
+
+                <div class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <div class="auth-switch">
+                Already have an account?
+                <a href="signin.html">Sign in.</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>☕ Brew & Bloom</h3>
+                <p>
+                    Handcrafted coffee and good moments.
+                </p>
+            </div>
+
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>hello@brewandbloom.com</li>
+                    <li>+1 555 123 4567</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Brew & Bloom Café. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>

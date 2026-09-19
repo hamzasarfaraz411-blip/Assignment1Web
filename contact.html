@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Brew & Bloom Café</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">☕</span>
+            Brew & Bloom
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-links">
+            <a href="signin.html" class="signin-link">Sign In</a>
+            <a href="signup.html" class="signup-link">Sign Up</a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- HEADER -->
+<section class="page-header">
+    <div class="container">
+        <span class="badge">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you.</p>
+    </div>
+</section>
+
+
+<!-- CONTACT COMPONENTS -->
+<section class="section">
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <!-- CONTACT INFORMATION -->
+            <div>
+
+                <div class="contact-card">
+                    <h3>📍 Visit Us</h3>
+                    <p>
+                        25 Coffee Street,<br>
+                        Downtown,<br>
+                        Your City
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>📞 Call Us</h3>
+                    <p>
+                        +1 555 123 4567
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>✉ Email</h3>
+                    <p>
+                        hello@brewandbloom.com
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>🕒 Opening Hours</h3>
+                    <p>
+                        Monday - Friday: 8 AM - 10 PM<br>
+                        Saturday: 9 AM - 11 PM<br>
+                        Sunday: 9 AM - 9 PM
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>☕ Quick Response</h3>
+                    <p>
+                        Our team usually responds to messages within one
+                        business day.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <div class="form-card">
+
+                <span class="badge">Send a Message</span>
+
+                <h2>Let's talk</h2>
+
+                <p class="section-subtitle" style="margin: 8px 0 25px;">
+                    Have a question, suggestion or reservation request?
+                    Send us a message.
+                </p>
+
+                <!-- FORMspree -->
+                <form
+                    action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                    method="POST"
+                >
+
+                    <div class="form-group">
+                        <label for="name">
+                            Full Name <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-control"
+                            placeholder="Enter your full name"
+                            minlength="2"
+                            maxlength="60"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address <span class="required">*</span>
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            class="form-control"
+                            placeholder="+1 555 123 4567"
+                            pattern="[0-9+\-\s()]{7,20}"
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="subject">
+                            Subject <span class="required">*</span>
+                        </label>
+
+                        <select
+                            id="subject"
+                            name="subject"
+                            class="form-control"
+                            required
+                        >
+                            <option value="">Choose a subject</option>
+                            <option value="general">General Question</option>
+                            <option value="reservation">Reservation</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="event">Private Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">
+                            Message <span class="required">*</span>
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-control"
+                            placeholder="Write your message here..."
+                            minlength="10"
+                            maxlength="1000"
+                            required
+                        ></textarea>
+                    </div>
+
+
+                    <div class="checkbox-row">
+                        <input
+                            type="checkbox"
+                            id="consent"
+                            name="consent"
+                            required
+                        >
+
+                        <label for="consent">
+                            I confirm that the information provided is correct.
+                        </label>
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Prefer a cup of coffee?</h2>
+        <p>Visit Brew & Bloom and talk to us in person.</p>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>☕ Brew & Bloom</h3>
+                <p>
+                    Your neighborhood destination for handcrafted coffee
+                    and fresh food.
+                </p>
+            </div>
+
+            <div>
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Mon - Fri: 8 AM - 10 PM</li>
+                    <li>Saturday: 9 AM - 11 PM</li>
+                    <li>Sunday: 9 AM - 9 PM</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Brew & Bloom Café. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
